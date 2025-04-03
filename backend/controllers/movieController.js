@@ -1,5 +1,5 @@
 import { getByTitle } from "@testing-library/dom";
-import Movie from "../models/Movie";
+import Movie from "../models/Movie.js";
 
 export const getMovies = async(req, res) => {
     const movies = await Movie.find()
